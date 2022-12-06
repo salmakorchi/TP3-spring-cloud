@@ -13,7 +13,7 @@ public interface ProductItemRestClient {
    // PagedModel<Product> pageProducts(@RequestParam(name="page") int page,@RequestParam(name="size") int size);
  @GetMapping(path = "/products")
  PagedModel<Product> pageProducts();
-    @GetMapping(path = "/product/{id}?projection=full")
+    @GetMapping(path = "/product/{id}")
     Product getProductById(@PathVariable("id") Long id);
 
 
